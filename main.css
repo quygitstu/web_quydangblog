@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@453&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+.main_body {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   background-color: white;
+   height: 18rem;
+   width: 55rem;
+   border-radius: 20px;
+   backdrop-filter: blur(10px);
+   background-color: rgba(255, 255, 255, 0.3);
+   box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+.main_body .main_title_404_section {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+.main_body .main_title_404_section h1 {
+    font-size: 7rem;
+}
+.main_body .main_title_404_section h3 {
+    font-size: 27px;
+    padding-left: 3px;
+}
+.main_body .main_content_section {
+    padding-top: 15px;
+}
+.main_body .main_content_section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+}
+.main_body .main_content_copyright_section {
+  margin-top: 15px;
+  text-align: center;
+}
+.main_body .main_content_copyright_section p {
+  font-family: sans-serif;
+  font-size: 13px;
+}

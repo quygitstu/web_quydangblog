@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Coding by quydang -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random number - Quý Đặng Blog</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel = "stylesheet" href = "randnum.css">
+</head>
+<script src = "randnum.js"></script>
+<body>
+    <div class="main_body">
+       <div class="header">
+           <h2> Random number </h2>
+       </div>
+       <div class="content">
+           <p> From </p>
+           <input type = "number"  class = "inp" id = "from">
+           <p> To </p>
+           <input type = "number"  class = "inp" id = "to">
+           <br>
+           <button type = "submit" id = "btn" class = "btn" title = "random a number" onclick="randNum()"><i class="fas fa-random"></i> Random</button>
+           <div class = "result">
+            <h3>Result </h3>
+            <b id = "result"></b>
+           </div>
+           
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.body_section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.body_section .box {
+  text-align: center;
+  height: 16em;
+  width: 65em;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+.body_section .box p {
+    line-height: 10rem;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.body_section .links a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 3em;
+    border: 2px solid #69a6ce;
+    color: #69a6ce;
+    padding: 20px 3em;
+    line-height: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.body_section .links a:hover {
+	background: #69a6ce;
+        color: #fff;
+}
