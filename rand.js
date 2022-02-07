@@ -1,10 +1,11 @@
+//Last updated: 7/2/22
 function getPass () {
     var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*(){}|:/[]+=~";
     var lengthPass = 12;
     var password = "";
     for (var i = 0; i <= lengthPass ; i++) {
         var randPass = Math.floor(Math.random() * char.length);
-        password += char.substring(randPass, randPass + 1);
+        password += char.substring(randPass);
     }
     document.getElementById("display").value = password;
 }
