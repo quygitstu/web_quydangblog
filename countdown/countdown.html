@@ -1,0 +1,64 @@
+<html>
+    <head>
+<title> Countdown - Quý Đặng Blog</title>
+ <meta name="title" content="Countdown - Quý Đặng Blog">
+    <meta name="description" content="Trang web chính thức của Quý Đặng Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quydangblog.live/">
+    <meta property="og:title" content="Quý Đặng Blog">
+    <meta property="og:description" content="Website chính thức của Quý Đặng Blog">
+    <meta property="og:image" content="http://quydangblog.live/assets/favicon.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://quydangblog.live/">
+    <meta property="twitter:title" content="Countdown - Quý Đặng Blog">
+    <meta property="twitter:description" content="Website chính thức của Quý Đặng Blog">
+<meta charset="utf-8">
+<link rel= "icon" href= "/assets/favicon.png">
+<link rel = "stylesheet" href ="/countdown/countdown.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="headline"> Countdown Tết 2023 </h1>
+            <div id="countdown">
+              <ul>
+                <li><span id="days"></span>day(s)</li>
+                <li><span id="hours"></span>Hour(s)</li>
+                <li><span id="minutes"></span>Minute(s)</li>
+                <li><span id="seconds"></span>Second(s)</li>
+              </ul>
+            </div>
+            <div class="text">
+                  <h2> Quý Mão </h2>
+              </div>
+            </div>
+          </div>
+    </body>
+    <script>
+(function () {
+  var second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+  var tet = "Jan 22 2023, 00:00:00"
+      countDown = new Date(tet).getTime(),
+      x = setInterval(function() {    
+
+        var now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        if (distance < 0) {
+          var headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
+              
+          clearInterval(x);
+        }
+      }, 0)
+  }());
+    </script>
+</html>
