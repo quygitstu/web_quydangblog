@@ -1,7 +1,7 @@
 //Last updated: 7/2/22
 function getPass () {
     var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*(){}|:/[]+=~";
-    var lengthPass = 12;
+    var lengthPass = 14;
     var password = "";
     for (var i = 0; i <= lengthPass ; i++) {
         var randPass = Math.floor(Math.random() * char.length);
