@@ -5,7 +5,7 @@ function getPass () {
     var password = "";
     for (var i = 0; i <= lengthPass ; i++) {
         var randPass = Math.floor(Math.random() * char.length);
-        password += char.substring(randPass, randPass + 0);
+        password += char.substring(randPass, randPass + 1);
     }
     document.getElementById("display").value = password;
 }
