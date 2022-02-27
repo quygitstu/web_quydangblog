@@ -46,7 +46,10 @@
    cursor: pointer;
    font-family: 'Open Sans', sans-serif;
 }
-.main_body .content .btn .btn1:hover {
+.main_body .content .btn .btn1:hover, 
+.main_body .content .btn .btn2:hover,
+.main_body .content .btn .btn3:hover
+ {
     background-color: RoyalBlue;
   }
 
@@ -62,9 +65,6 @@
    cursor: pointer;
    font-family: 'Open Sans', sans-serif;
 }
-.main_body .content .btn .btn3:hover {
-    background-color: RoyalBlue;
-  }
   .main_body .content .btn .btn3 {
     padding: 12px 25px;
     margin: 3px 2px;
@@ -77,6 +77,3 @@
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
  }
- .main_body .content .btn .btn3:hover {
-     background-color: RoyalBlue;
-}
