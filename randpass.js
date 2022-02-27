@@ -1,4 +1,4 @@
-//Last updated: 7/2/22
+//Last updated: 27/2/22
 function getPass () {
     var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*(){}|:/[]+=~";
     var lengthPass = 14;
